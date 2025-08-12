@@ -238,6 +238,7 @@ text-align: left;
   gap: 30px;
   margin-top: 30px;
 }
+/**/
 
 .service-card, .str-card {
   text-decoration: none;
@@ -676,7 +677,7 @@ footer .social a:hover {
 }
 
 .service-icon img {
-    width: 50px;    
+    width: 200px;    
     height: auto;   
     margin-bottom: 10px;
 }
@@ -696,13 +697,11 @@ footer .social a:hover {
 }
 
 .service-icon-2 img {
-    width: 100px;    
+    width: 200px;    
     height: auto;   
     margin-bottom: 10px;
 }
 
-
-/*INFORMACION DE SERVICIOS*/
 .contenedor-info-servicios {
   display: grid;
   grid-template-columns: 1fr 1.5fr 1fr;
@@ -801,3 +800,4 @@ footer .social a:hover {
 .botones-info-servicios button:hover {
   background: #555;
 }
+
