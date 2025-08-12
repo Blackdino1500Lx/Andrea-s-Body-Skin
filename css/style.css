@@ -28,7 +28,7 @@ header {
 }
 
 .logo img {
-  height: 9rem;
+  height: 5rem;
   width: auto;
   object-fit: contain;
 }
@@ -58,19 +58,28 @@ nav a.active{
   text-decoration-thickness: 3px;
 }
 
+
+
 /* Sección principal */
 .hero {
   height: 80vh;
-  background-image: url('../img/levinia-estetica-integral.jpg');
-  background-size: cover;
-  background-position: center;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   text-align: center;
   padding: 40px 20px;
-  position: relative;
+  overflow: hidden; /* Para que la imagen no se salga */
+}
+
+.hero img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
 .hero::before {
@@ -79,7 +88,7 @@ nav a.active{
   top: 0; left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,0.1); /* Capa semitransparente */
   z-index: 1;
 }
 
@@ -117,6 +126,12 @@ nav a.active{
   background-color: #d4a888;
   color: #333;
 }
+
+
+
+
+
+
 /*Contacto Body*/
 .dual-section{
   display: flex;
@@ -143,7 +158,7 @@ nav a.active{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 11rem;
   flex-wrap: wrap;
   padding: 40px 20px;
 }
@@ -231,6 +246,11 @@ text-align: left;
 
 
 /*Servicios*/
+.services{
+  align-items: center;
+  padding-bottom: 8rem;
+}
+
 .services-grid, .str-grid {
   display: flex;
   justify-content: center;
@@ -270,7 +290,58 @@ text-align: left;
 .service-card p {
   font-size: 1em;
 }
+/*Seccion servicios 2*/
+.seccion2-serv{
+ display: flex;
+  flex-direction: row;
+  height: auto; /* más flexible */
+  background-color: #c67890;
+  padding: 5rem;
+  gap: 2rem;
+}
+.serv-ch{
+  flex: 1;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.serv2-1{
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  background-color: #ddbb66;
+}
+.serv1-p{
+  position: relative;
+  right: 50rem;
+  
+}
+.Img-Gr{
+ position: absolute;
+  top: 0;
+  left: 20rem;
+  height: 30rem;
+  width: auto;
+  z-index: 1;
 
+}
+.Img-Pq{
+   position: absolute;
+  top: 5rem; /* ajusta según lo que necesites */
+  left: 10rem;
+  height: 18rem;
+  width: auto;
+  z-index: 2;
+
+}
+.serv2-2{
+  text-align: center;
+  background-color: #ddd;
+}
+.serv-ch-ch{
+  width: 60%;
+  position: relative;
+  r
+}
 /* Secciones */
 section {
   padding: 40px 20px;
@@ -286,6 +357,10 @@ section {
   background-color: #ffffff;
 }
 
+.contact{
+  padding-top: 8rem;
+}
+
 h3 {
   margin-bottom: 20px;
   font-size: 1.8em;
@@ -298,7 +373,7 @@ p {
 
 /* Botón principal */
 .cta-button {
-  display: inline-block;
+  align-items: center;
   margin-top: 3rem;
   padding: 1rem 2.5rem;
   background: #eec7ac;
@@ -356,10 +431,9 @@ p {
 .product-grid {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 30px;
   margin-bottom: 2rem;
-  justify-content: center;
+  margin: 4rem;
   padding: 30px;
 }
 
@@ -399,7 +473,16 @@ p {
   display: block;
 }
 
+
+
 /*Categorias de productos*/
+
+#productos.products h2{
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+}
+
 .category-bar {
   display: flex;
   justify-content: center;
@@ -421,8 +504,8 @@ p {
 }
 
 .category-bar a img {
-  width: 50px;
-  height: 50px;
+  width: 6rem;
+  height: 6rem;
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid #eec7ac;
@@ -683,9 +766,10 @@ footer .social a:hover {
 }
 /*Seccion de servicios */
 .services-grid-2 {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    justify-items: center;
+    margin: 4rem;
 }
 
 
@@ -693,7 +777,7 @@ footer .social a:hover {
     border: 1px solid #ddd;
     padding: 20px;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 4px;
 }
 
 .service-icon-2 img {
@@ -711,93 +795,10 @@ footer .social a:hover {
   position: relative;
 }
 
-/* Columna Izquierda */
-.columna-izquierda-servicios {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  z-index: 3; /* para que la caja lista quede encima */
-}
 
-.caja-lista-servicios {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  margin-bottom: 60px;
-  position: relative;
-  z-index: 5;
-  width: 100%;
-}
 
-.caja-lista-servicios ul {
-  list-style: disc inside;
-  line-height: 1.6;
-  font-size: 0.95rem;
-}
 
-.caja-imagen-pequena {
-  position: absolute;
-  bottom: -40px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 4;
-  width: 220px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-}
 
-.caja-imagen-pequena img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-  border-radius: 10px;
-}
 
-/* Columna Central */
-.columna-central {
-  position: relative;
-  z-index: 1;
-}
 
-.columna-central img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  object-fit: cover;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-}
-
-/* Columna Derecha */
-.columna-derecha h2 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-}
-
-.columna-derecha p {
-  margin-bottom: 10px;
-  line-height: 1.6;
-}
-
-.botones-info-servicios {
-  margin-top: 15px;
-}
-
-.botones-info-servicios button {
-  background: #333;
-  color: white;
-  border: none;
-  padding: 10px 18px;
-  margin-right: 10px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.botones-info-servicios button:hover {
-  background: #555;
-}
 
