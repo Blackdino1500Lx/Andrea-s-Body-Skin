@@ -644,7 +644,7 @@ footer .social a:hover {
 }
 
 .service-icon img {
-    width: 50px;    
+    width: 200px;    
     height: auto;   
     margin-bottom: 10px;
 }
@@ -664,7 +664,108 @@ footer .social a:hover {
 }
 
 .service-icon-2 img {
-    width: 100px;    
+    width: 200px;    
     height: auto;   
     margin-bottom: 10px;
 }
+
+/*SECCION INFORMACION*/
+.contenedor-info-servicios {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  gap: 30px;
+  padding: 40px;
+  align-items: center;
+  position: relative;
+}
+
+/* Columna Izquierda */
+.columna-izquierda-servicios {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 3; /* para que la caja lista quede encima */
+}
+
+.caja-lista-servicios {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 5;
+  width: 100%;
+}
+
+.caja-lista-servicios ul {
+  list-style: disc inside;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.caja-imagen-pequena {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  width: 220px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.caja-imagen-pequena img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Columna Central */
+.columna-central {
+  position: relative;
+  z-index: 1;
+}
+
+.columna-central img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+/* Columna Derecha */
+.columna-derecha h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.columna-derecha p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.botones-info-servicios {
+  margin-top: 15px;
+}
+
+.botones-info-servicios button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  margin-right: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.botones-info-servicios button:hover {
+  background: #555;
+}
+
