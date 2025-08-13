@@ -238,6 +238,7 @@ text-align: left;
   gap: 30px;
   margin-top: 30px;
 }
+/**/
 
 .service-card, .str-card {
   text-decoration: none;
@@ -250,12 +251,6 @@ text-align: left;
   text-align: center;
   box-shadow: 0 0 5px rgba(0,0,0,0.08);
   transition: transform 0.3s ease;
-}
-.services-grid:hover .service-card:not(:hover) {
-  transform: scale(1.8);
-  filter: blur(1px);
-  position: relative;
-transform: translateY(-5px);
 }
 
 
@@ -319,6 +314,43 @@ p {
   background: #cba284;
 }
 
+/*Servicios*/
+.services-grid-2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 2rem;
+  justify-content: center;
+  padding: 30px;
+}
+.service-card {
+  background: #fff;
+  border: 1px solid #e4e4e4;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+
+.service-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.service-card h4 {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
 /* Productos */
 
 .product-grid {
@@ -328,6 +360,7 @@ p {
   gap: 30px;
   margin-bottom: 2rem;
   justify-content: center;
+  padding: 30px;
 }
 
 .product-card {
@@ -631,20 +664,20 @@ footer .social a:hover {
 /*Seccion de servicios */
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0.5rem;
 }
 
 
 .service-card {
     border: 1px solid #ddd;
-    padding: 20px;
+    padding: 1rem;
     text-align: center;
     border-radius: 8px;
 }
 
 .service-icon img {
-    width: 50px;    
+    width: 200px;    
     height: auto;   
     margin-bottom: 10px;
 }
@@ -664,7 +697,107 @@ footer .social a:hover {
 }
 
 .service-icon-2 img {
-    width: 100px;    
+    width: 200px;    
     height: auto;   
     margin-bottom: 10px;
 }
+
+.contenedor-info-servicios {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  gap: 30px;
+  padding: 40px;
+  align-items: center;
+  position: relative;
+}
+
+/* Columna Izquierda */
+.columna-izquierda-servicios {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 3; /* para que la caja lista quede encima */
+}
+
+.caja-lista-servicios {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 5;
+  width: 100%;
+}
+
+.caja-lista-servicios ul {
+  list-style: disc inside;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.caja-imagen-pequena {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  width: 220px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.caja-imagen-pequena img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Columna Central */
+.columna-central {
+  position: relative;
+  z-index: 1;
+}
+
+.columna-central img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+/* Columna Derecha */
+.columna-derecha h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.columna-derecha p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.botones-info-servicios {
+  margin-top: 15px;
+}
+
+.botones-info-servicios button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  margin-right: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.botones-info-servicios button:hover {
+  background: #555;
+}
+
