@@ -295,7 +295,6 @@ text-align: left;
  display: flex;
   flex-direction: row;
   height: auto; /* más flexible */
-  background-color: #c67890;
   padding: 5rem;
   gap: 2rem;
 }
@@ -308,7 +307,6 @@ text-align: left;
   display: flex;
   align-items: flex-start;
   position: relative;
-  background-color: #ddbb66;
 }
 .serv1-p{
   position: relative;
@@ -318,29 +316,48 @@ text-align: left;
 .Img-Gr{
  position: absolute;
   top: 0;
-  left: 20rem;
-  height: 30rem;
+  left: 28rem;
+  height: 18rem;
   width: auto;
   z-index: 1;
-
+  border-radius: .8rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 .Img-Pq{
    position: absolute;
-  top: 5rem; /* ajusta según lo que necesites */
-  left: 10rem;
-  height: 18rem;
-  width: auto;
+  top: 11rem; /* ajusta según lo que necesites */
+  left: 12rem;
+  height: auto;
+  width: 18rem;
   z-index: 2;
+  border-radius: .8rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 
 }
 .serv2-2{
-  text-align: center;
-  background-color: #ddd;
+  margin-left: 25rem;
+  width: 50rem;
+  align-items: center;
 }
 .serv-ch-ch{
-  width: 60%;
+  width: 100%;
   position: relative;
+  gap: 2rem;
   
+}
+.btn-serv{
+  padding: 1rem 0 1rem 0;
+  align-content: space-evenly;
+  height: 5rem;
+}
+.btn-serv a{
+  margin-left: 1rem;
+}
+.text-serv{
+  width: 23rem;
+  position: absolute;
+  left: 0;
+
 }
 /* Secciones */
 section {
