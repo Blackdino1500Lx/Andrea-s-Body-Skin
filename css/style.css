@@ -374,10 +374,6 @@ section {
   background-color: #ffffff;
 }
 
-.contact{
-  padding-top: 8rem;
-}
-
 h3 {
   margin-bottom: 20px;
   font-size: 1.8em;
@@ -421,7 +417,7 @@ p {
   border: 1px solid #e4e4e4;
   border-radius: 10px;
   padding: 20px;
-  width: 280px;
+  width: 250px;
   text-align: center;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
@@ -569,31 +565,6 @@ p {
   font-size: 24px;
   cursor: pointer;
 }
-/* Galería */
-.gallery-grid {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.gallery-grid img {
-  width: 300px;
-  border-radius: 10px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
-}
-
-/* Testimonios */
-.testimonials blockquote {
-  font-style: italic;
-  margin: 20px auto;
-  max-width: 600px;
-  padding: 10px;
-  border-left: 4px solid #f2e0b3;
-  background-color: #fff;
-}
-
-
 
 /* Pie de página */
 footer {
@@ -684,22 +655,31 @@ footer .social a:hover {
   background-color: #ddbb66;
 }
 
-/* Responsive */
+.hamburger {
+  display: none; /* Oculto en escritorio */
+}
+
+/* Responsive para celulares*/
 @media (max-width: 768px) {
-  .header-container,
-  .about-container,
-  .product-layout {
+
+  /* Encabezado */
+  .header-container {
     flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .navigation {
+    flex-direction: column;
+    gap: 10px;
     align-items: center;
   }
 
-  .sidebar {
-    max-width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .product-card {
-    width: 90%;
+  /* Hero */
+  .hero {
+    height: auto;
+    padding: 60px 20px;
+    text-align: center;
   }
 
   .hero h2 {
@@ -708,6 +688,243 @@ footer .social a:hover {
 
   .hero p {
     font-size: 1em;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* About */
+  .about-container {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .about-text, .about-image {
+    max-width: 100%;
+  }
+
+  .about-val-container {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+  }
+
+  /* Servicios */
+.services-grid-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  padding: 0 1rem;
+}
+
+.service-card {
+  width: 100%;
+  max-width: 320px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+  /* Sección 2 de servicios */
+  .seccion2-serv {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .Img-Gr, .Img-Pq {
+    position: static;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .serv2-2 {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .text-serv {
+    position: static;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  /* Productos */
+  .category-bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  justify-items: center;
+  margin-bottom: 2rem;
+  }
+
+  .category-bar a {
+  padding: 6px;
+  font-size: 0.75rem;
+  text-align: center;
+  font-weight: 500;
+  }
+
+  .category-bar a img {
+  width: 3.2rem;
+  height: 3.2rem;
+  }
+
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    padding: 0;
+  }
+
+  .product-card {
+    width: 90%;
+  }
+
+  .product-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  /* Contacto */
+  .dual-section {
+    flex-direction: column;
+  }
+
+  .art-contact {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .art-contact a, .art-contact p {
+    margin: 0;
+  }
+
+  /* Banner Servicios */
+  .banner-servicios {
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    height: auto;
+    text-align: center;
+  }
+
+  .banner-content-servicios {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .contenedor-info-servicios {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  /* Footer */
+  footer .social {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hamburger {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 1.5rem; /* Más pequeño */
+  cursor: pointer;
+  color: #333;
+  z-index: 1000;
+}
+
+/* Ocultar navegación por defecto */
+.navigation {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Mostrar cuando está activa */
+.navigation.active {
+  display: flex;
+}
+}
+
+
+/*Responsive tablets*/
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .header-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .navigation {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .hero h2 {
+    font-size: 2.5em;
+  }
+
+  .hero p {
+    font-size: 1.1em;
+  }
+
+  .about-container {
+    gap: 4rem;
+    padding: 2rem;
+  }
+
+  .service-card {
+    width: 300px;
+  }
+
+  .services-grid-2 {
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .product-card {
+    width: 45%;
+  }
+
+  .category-bar a img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .product-layout {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sidebar {
+    max-width: 250px;
+  }
+
+  .contenedor-info-servicios {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
   }
 }
 
@@ -786,7 +1003,6 @@ footer .social a:hover {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     justify-items: center;
-    margin: 4rem;
 }
 
 
@@ -811,7 +1027,6 @@ footer .social a:hover {
   align-items: center;
   position: relative;
 }
-
 
 
 

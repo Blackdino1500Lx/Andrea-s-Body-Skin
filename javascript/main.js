@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // 🧃 FILTRO DE PRODUCTOS
   const categoryLinks = document.querySelectorAll(".category-bar a");
   const productCards = document.querySelectorAll(".product-card");
 
@@ -20,4 +21,15 @@ document.addEventListener("DOMContentLoaded", function () {
       this.classList.add("active");
     });
   });
+
+  // 🍔 MENÚ HAMBURGUESA
+  const hamburgerBtn = document.getElementById("hamburgerBtn");
+  const navMenu = document.getElementById("navMenu");
+
+  if (hamburgerBtn && navMenu) {
+    hamburgerBtn.addEventListener("click", function () {
+      navMenu.classList.toggle("active");
+
+    });
+  }
 });
