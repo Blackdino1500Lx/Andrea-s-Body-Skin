@@ -160,7 +160,7 @@ nav a.active{
   justify-content: center;
   gap: 11rem;
   flex-wrap: wrap;
-  padding: 40px 20px;
+  
 }
 
 .about-text {
@@ -345,10 +345,12 @@ text-align: left;
   
 }
 .btn-serv{
+  display: inline-table;
   padding: 1rem 0 1rem 0;
   align-content: space-evenly;
   height: 5rem;
 }
+
 .btn-serv a{
   margin-left: 1rem;
 }
@@ -710,7 +712,13 @@ footer .social a:hover {
     height: auto;
     padding: 2rem;
   }
-
+section{
+  padding: 01rem;
+}
+.cont-h3{
+  margin-top: 3rem;
+  background-color: #ffffff;
+}
   /* Servicios */
 .services-grid-2 {
   display: flex;
@@ -733,8 +741,13 @@ footer .social a:hover {
 
   .serv2-1{
     display: flex;
-
+    flex-direction: column;
   }
+
+  .serv2-1 img{
+    height: auto;
+  }
+
 
   /* Sección 2 de servicios */
   .seccion2-serv {
