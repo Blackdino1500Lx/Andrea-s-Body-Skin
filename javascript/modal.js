@@ -31,11 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // Función para confirmar compra
   window.confirmarCompra = function () {
   const titulo = document.getElementById("modal-title").textContent.trim();
-  const beneficios = document.getElementById("modal-beneficios").textContent.trim();
-  const descripcion = document.getElementById("modal-desc").textContent.trim();
   const precio = document.getElementById("modal-price").textContent.trim();
 
-  const mensaje = `Hola! Me gustaría más información sobre el tratamiento "${titulo}".\nBeneficios: ${beneficios}\nDescripción: ${descripcion}\nPrecio: ${precio}`;
+  const mensaje = `Hola! Me gustaría más información sobre  "${titulo}". Precio: ${precio}`;
   const numero = "50660247413"; // Número en formato internacional sin signos
 
   const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;

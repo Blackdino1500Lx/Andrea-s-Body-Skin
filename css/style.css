@@ -695,6 +695,14 @@ footer .social a:hover {
     flex-direction: column;
     gap: 15px;
   }
+/*Botones inicio*/
+.price{
+  margin-bottom: 1rem;
+}
+.view-more{
+  text-decoration: none;
+  margin-top: 1rem;
+}
 
   /* About */
   .about-container {
@@ -848,7 +856,15 @@ section{
     gap: 2rem;
     padding: 2rem;
   }
-
+/*Servicios*/
+.serv2-1{
+  align-content: center;
+  margin: 0 auto;
+}
+.serv2-2{
+  align-items: center;
+  margin: 0 auto;
+}
   /* Footer */
   footer .social {
     flex-direction: column;
