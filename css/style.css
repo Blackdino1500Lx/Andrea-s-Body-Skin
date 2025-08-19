@@ -966,17 +966,20 @@ section{
     flex-direction: column;
     max-width: 100%;
   }
+  .serv2-1{
+    align-content: center;
+    align-items: center;
+  }
   .Img-Gr{
     position: relative;
-    margin-left: 10rem;
+    margin-left:5rem;
   }
   .Img-Pq{
-    position: relative;
-    left: 20rem;
+    display: none;
   }
   .serv2-2{
     position: relative;
-    right: 5rem;
+    margin: 0 auto;
   }
 }
 
