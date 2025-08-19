@@ -296,6 +296,8 @@ text-align: left;
   height: auto; /* más flexible */
   padding: 5rem;
   gap: 2rem;
+  max-width: 100vw;
+  overflow-x:hidden ;
 }
 .serv-ch{
   flex: 1;
@@ -313,9 +315,9 @@ text-align: left;
   
 }
 .Img-Gr{
- position: absolute;
+  position: relative;
   top: 0;
-  left: 28rem;
+  left: 24rem;
   height: 18rem;
   width: auto;
   z-index: 1;
@@ -323,9 +325,9 @@ text-align: left;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 .Img-Pq{
-   position: absolute;
-  top: 11rem; /* ajusta según lo que necesites */
-  left: 12rem;
+  position: relative;
+  top: 12rem; 
+  left: -6rem;
   height: auto;
   width: 18rem;
   z-index: 2;
@@ -334,7 +336,7 @@ text-align: left;
 
 }
 .serv2-2{
-  margin-left: 25rem;
+  margin-left: 8rem;
   width: 50rem;
   align-items: center;
 }
@@ -959,6 +961,23 @@ section{
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
+  .seccion2-serv{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .Img-Gr{
+    position: relative;
+    margin-left: 10rem;
+  }
+  .Img-Pq{
+    position: relative;
+    left: 20rem;
+  }
+  .serv2-2{
+    position: relative;
+    right: 5rem;
+  }
 }
 
 /*Pagina de SERVICIOS*/
@@ -1060,7 +1079,11 @@ section{
   align-items: center;
   position: relative;
 }
-
+.p-footer{
+  margin-top: 4rem;
+  font-weight: bold;
+  font-size: .8rem;
+}
 
 
 
