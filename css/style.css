@@ -758,11 +758,17 @@ section{
     height: auto;
   }
 
+  .btn-serv{
+    display: flex;
+    flex-direction: column;
+  }
+
 
   /* Sección 2 de servicios */
   .seccion2-serv {
     flex-direction: column;
     padding: 2rem;
+    margin-bottom: 4rem;
   }
 
   .Img-Gr, .Img-Pq {
