@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const precio = document.getElementById("modal-price").textContent.trim();
 
   const mensaje = `Hola! Me gustaría más información sobre  "${titulo}". Precio: ${precio}`;
-  const numero = "50660247413"; // Número en formato internacional sin signos
+  const numero = "50689307517"; // Número en formato internacional sin signos
 
   const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
   window.open(url, "_blank");
