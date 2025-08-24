@@ -7,9 +7,20 @@ year:2025.
 */
 
 describe('Pruebas Generales de la página', () => {
+  let startTime = 0;
+
   beforeEach(() => {
+    cy.then(() => {
+      startTime = performance.now();
+    });
+
     cy.visit('https://blackdino1500lx.github.io/Andrea-s-Body-Skin');
-    cy.wait(2000);
+
+    cy.get('body').should('exist').then(() => {
+      const endTime = performance.now();
+      const duration = Math.round(endTime - startTime);
+      cy.log(`🕒 Duración de carga: ${duration} ms`);
+    });
   });
 
   it('Prueba de links de navegación y redireccionamiento de logo', () => {
