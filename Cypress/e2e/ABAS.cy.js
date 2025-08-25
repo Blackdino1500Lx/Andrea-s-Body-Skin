@@ -2,7 +2,7 @@
 testRunner: cypress.
 Codigo test para Pagina Andrea Body and Skin.
 Author: S!XGroup.
-version:1.0.
+version:1.5.
 year:2025.
 */
 
