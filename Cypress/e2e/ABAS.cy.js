@@ -2,7 +2,7 @@
 testRunner: cypress.
 Codigo test para Pagina Andrea Body and Skin.
 Author: S!XGroup.
-version:1.0.
+version:1.5.
 year:2025.
 */
 
@@ -16,7 +16,7 @@ describe('Pruebas Generales de la página', () => {
 
     cy.visit('https://blackdino1500lx.github.io/Andrea-s-Body-Skin');
 
-    cy.get('body').should('exist').then(() => {
+    cy.get('div.hero').should('exist').then(() => {
       const endTime = performance.now();
       const duration = Math.round(endTime - startTime);
       cy.log(`🕒 Duración de carga: ${duration} ms`);

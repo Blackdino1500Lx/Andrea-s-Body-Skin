@@ -910,6 +910,7 @@ section{
 @media (min-width: 769px) and (max-width: 1024px) {
 
   .header-container {
+    position: fixed;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
