@@ -1,0 +1,35 @@
+body {
+  font-family: 'Georgia', serif;
+  background-color: #fff7ed;
+  color: #5c3d2e;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #c67890;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+ul {
+  list-style: none; /* Elimina los puntos */
+  padding-left: 0;
+  max-width: 400px;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: #c67890;
+  font-size: 1rem;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #a14f33;
+}
