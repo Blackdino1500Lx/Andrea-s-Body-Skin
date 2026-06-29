@@ -14,7 +14,7 @@ body {
 
 /* Encabezado */
 header {
-  background: S#d7d7d7;
+  background: #d7d7d7;
   padding: 10px 30px;
 }
 
@@ -212,54 +212,12 @@ text-align: left;
   box-shadow: 0 0 8px rgba(0,0,0,0.15);
 }
 
-.str-card img {
-  width: 95%;
-  height: 160px;
-  margin-bottom: 15px;
-  border-radius: .5rem;
-}
-
-.str-card h4 {
-  margin-bottom: 10px;
-  font-size: 1.3em;
-  color: #eec7ac;
-  position: relative;
-  z-index: 2;
-  background: #fff;
-  padding: 0.2em 0.5em;
-  display: inline-block;
-}
-
-.str-card p {
-  font-size: 1em;
-  color: #333;
-}
-.str-grid:hover .str-card:not(:hover) {
-  transform: scale(0.95);
-  filter: blur(1px);
-  position: relative;
-
-}
-.str-grid:hover .str-card:not(:hover) h4 {
-  filter: none;
-}
-
-
 /*Servicios*/
 .services{
   align-items: center;
 }
 
-.services-grid, .str-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 30px;
-}
-/**/
-
-.service-card, .str-card {
+.service-card {
   text-decoration: none;
   color: #333;
   background: #fff;
@@ -308,11 +266,6 @@ text-align: left;
   display: flex;
   align-items: flex-start;
   position: relative;
-}
-.serv1-p{
-  position: relative;
-  right: 50rem;
-  
 }
 .Img-Gr{
   position: relative;
@@ -371,9 +324,7 @@ section {
 .services,
 .about,
 .contact,
-.products,
-.gallery,
-.testimonials {
+.products {
   background-color: #ffffff;
 }
 
@@ -590,49 +541,6 @@ footer .social a:hover {
 }
 
 /*Pagina Productos*/
-.product-layout {
-  display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
-  padding: 40px 20px;
-}
-
-.sidebar {
-  flex: 1;
-  max-width: 220px;
-}
-
-.sidebar h4 {
-  margin-bottom: 15px;
-  font-size: 1.2em;
-  color: #c67890;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar li {
-  margin-bottom: 10px;
-}
-
-.sidebar a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.sidebar a:hover {
-  color: #eec7ac;
-}
-
-.sidebar a.active {
-  color: #c67890;
-  text-decoration: underline;
-}
-
 .product-grid {
   flex: 3;
   display: flex;
@@ -820,16 +728,6 @@ section{
     width: 90%;
   }
 
-  .product-layout {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .sidebar {
-    max-width: 100%;
-    margin-bottom: 2rem;
-  }
-
   /* Contacto */
   .dual-section {
     flex-direction: column;
@@ -857,12 +755,6 @@ section{
   .banner-content-servicios {
     max-width: 100%;
     text-align: center;
-  }
-
-  .contenedor-info-servicios {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    padding: 2rem;
   }
 /*Servicios*/
 .serv2-1{
@@ -954,20 +846,6 @@ section{
     height: 5rem;
   }
 
-  .product-layout {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .sidebar {
-    max-width: 250px;
-  }
-
-  .contenedor-info-servicios {
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-  }
   .seccion2-serv{
     display: flex;
     flex-direction: column;
@@ -1041,13 +919,6 @@ section{
 }
 
 /*Seccion de servicios */
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    padding: 0.5rem;
-}
-
-
 .service-card {
     border: 1px solid #ddd;
     padding: 1rem;
@@ -1056,47 +927,15 @@ section{
 }
 
 .service-icon img {
-    width: 200px;    
-    height: auto;   
-    margin-bottom: 10px;
-}
-/*Seccion de servicios */
-.services-grid-2 {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    justify-items: center;
-}
-
-
-.service-card-2 {
-    border: 1px solid #ddd;
-    padding: 20px;
-    text-align: center;
-    border-radius: 4px;
-}
-
-.service-icon-2 img {
-    width: 200px;    
-    height: auto;   
+    width: 200px;
+    height: auto;
     margin-bottom: 10px;
 }
 
-.contenedor-info-servicios {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr 1fr;
-  gap: 30px;
-  padding: 40px;
-  align-items: center;
-  position: relative;
-}
 .p-footer{
   margin-top: 4rem;
   font-weight: bold;
   font-size: .8rem;
 }
-
-
-
-
 
 
